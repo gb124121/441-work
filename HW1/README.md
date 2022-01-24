@@ -1,1 +1,6 @@
-This was a bit diffcult for some reason I couldnt get my assests to load in til I restsred my compouter and for reason that worked. On top of that Its been about a year since Ive done any kind of web devolpment or code so it was a bit of a brain scratcher to remeber some of these commands and how they work. Like for example the font coding. It just wouldnt go in or it would work for some bits but not all which was starnge.But I think I fixed it.
+# 441-work
+
+Homework repository for MART 441
+
+Base URL for site:
+https://gb124121.github.io/441-work/
