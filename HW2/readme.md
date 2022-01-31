@@ -1,0 +1,1 @@
+This week was reltivley easy I did do some refreshers on MART341 still gotta get back into it but slowly coming back to it. The assignment for this week did have my head scratching for a sec but quickly came back around and found out I was sourcing the script wrong. Aftyer that was smooth sailing. 
