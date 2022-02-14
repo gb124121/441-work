@@ -1,0 +1,97 @@
+<html>
+    <style>
+        body{
+            background-color: rgb(82, 124, 103);
+        }
+    </style>
+    <script>
+        function getChoice1()
+        {
+            var myChoice = document.getElementById("choice").value;
+            var myQuestion = document.getElementById("question");
+            if(myChoice === "Call Of Duty")
+            {
+                document.getElementById("choice").style.display="none";
+                document.getElementById("btnSubmit").style.display="none";
+                
+                document.getElementById("choice2").style.display="block";
+                document.getElementById("btnSubmit2").style.display="block";
+                
+
+                myQuestion.innerHTML = "Why is it better for graphics or gameplay.?";
+            }
+            else if(myChoice === "Battlefield")
+            {
+                document.getElementById("choice").style.display="none";
+                document.getElementById("btnSubmit").style.display="none";
+                
+                document.getElementById("choice3").style.display="block";
+                document.getElementById("btnSubmit3").style.display="block";
+                myQuestion.innerHTML = "Why is it better for sound or game mechanics.?";
+
+            }
+            else
+            {
+                myQuestion.innerHTML = "Invalid answer";
+            }
+        
+        }
+        function getChoice2()
+        {
+            var answer = document.getElementById("choice2").value;
+            var myQuestion = document.getElementById("question");
+            if(answer === "Gameplay")
+            {
+                document.getElementById("mainImage").src = "Call.jpg"
+                myQuestion.innerHTML = "Good Gameplay is always esstinal in games even if the game looks beatiful. ";
+            }
+            else if(answer === "Graphics")
+            {
+                document.getElementById("mainImage").src = "Graphic.jpg"
+                myQuestion.innerHTML = "Call Of Duty does have those sparlking looking guns and new great maps so can't argue there.";
+            }
+        }
+
+        function getChoice3()
+        {
+            var answer = document.getElementById("choice3").value;
+            var myQuestion = document.getElementById("question");
+            if(answer === "Sound")
+            {
+                document.getElementById("mainImage").src = "sound.jpg"
+                myQuestion.innerHTML = "Battlefield has always held the indusrty standard for game sound design";
+            }
+            else if(answer === "Game Mechanics")
+            {
+                document.getElementById("mainImage").src = "Battlefield.jpg"
+                myQuestion.innerHTML = "Battlefield has has a solid game mechanics for years but due to recent events its fallen off";
+            }
+        }
+    </script>
+    <body>
+
+        <h1>Best FPS</h1>
+        <br>
+        <img src="FPS.jpg" id="mainImage">
+    <div id="question">
+    <br>
+        You get on the internet an discover a page where there is a survey for the games.
+        <br>
+        Call of duty and battlefield.  
+        <br>
+        its your choice on saying which is more better to you. 
+    </div>
+       
+        <br>
+        <input type="text" size="50" id="choice" value=" Enter Call Of Duty or Battlefield">
+        <button id="btnSubmit" onclick="getChoice1();">Click to continue</button>
+
+        <input type="text" size="50" id="choice2" value="Enter Graphics or Gameplay" style="display:none">
+        <button id="btnSubmit2" onclick="getChoice2();"  style="display:none">Click to continue</button>
+
+        <input type="text" size="50" id="choice3" value="Sound or Game Mechanics"  style="display:none">
+        <button id="btnSubmit3" onclick="getChoice3();" style="display:none">Click to continue</button>
+
+    </body>
+
+</html>

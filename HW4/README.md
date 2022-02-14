@@ -1,0 +1,1 @@
+Not to diffcult again with same problem from last time miss entered info with a accidental peroid and none of it would work but quikcly figured that out.
