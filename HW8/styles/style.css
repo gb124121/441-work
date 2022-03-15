@@ -1,0 +1,30 @@
+   #square {
+      width: 100px;
+      height: 100px;
+      background: red;
+      position: absolute;
+      left: 0;
+      top: 400;
+    }
+    #circle {
+        height: 50px;
+        width: 50px;
+        background-color: #555;
+        border-radius: 100%;
+        position: absolute;
+        left: 0;
+        top: 450;
+    }
+    .quotes{
+      background: rgb(255, 255, 255);
+      color:rgb(0, 0, 0);
+    }
+
+    #quote3{
+      background: green;
+      color:white;
+    }
+
+    body{
+        background-color: rgba(238, 234, 229, 0.137);
+    }
