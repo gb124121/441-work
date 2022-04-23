@@ -2,9 +2,9 @@ var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 var shape, shape2;
 var modelObject;
-// create the first box
+
 function createBox() {
-  // create a box
+  
   var geometry = new THREE.BoxGeometry();
   var material = new THREE.MeshBasicMaterial({
     color: 0x9D70F9
@@ -12,19 +12,19 @@ function createBox() {
   shape = new THREE.Mesh(geometry, material);
   shape.position.set(50, 10, 10);
   scene.add(shape);
-  shape.scale.x = 25; // SCALE
-  shape.scale.y = 25; // SCALE
-  shape.scale.z = 25; // SCALE
+  shape.scale.x = 25; 
+  shape.scale.y = 25; 
+  shape.scale.z = 25; 
 
 
   animate();
 }
 
-// animate the first box
+
 function animate() {
   requestAnimationFrame(animate);
-  shape.rotation.x += 0.15;
-  shape.rotation.y += 0.15;
+  shape.rotation.x += 0.08;
+  shape.rotation.y += 0.08;
   createBox2();
   renderer.render(scene, camera);
 
@@ -117,7 +117,7 @@ function getControls(camera, renderer) {
 
 function loadModel() {
   loader = new THREE.OBJLoader();
-  loader.load('models/Skull.obj', function (object) {
+  loader.load('models/Sandal.obj', function (object) {
     object.rotation.z = Math.PI;
     modelObject = object;
     scene.add(object);
