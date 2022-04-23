@@ -23,17 +23,17 @@ function createBox() {
 
 function animate() {
   requestAnimationFrame(animate);
-  shape.rotation.x += 0.08;
-  shape.rotation.y += 0.08;
+  shape.rotation.x += 0.15;
+  shape.rotation.y += 0.15;
   createBox2();
   renderer.render(scene, camera);
 
 }
 
 
-// create the second box and add it as a child of the first box
+
 function createBox2() {
-  // create a box
+  
   var geometry = new THREE.BoxGeometry();
   var material = new THREE.MeshBasicMaterial({
     color: 0x02163B
@@ -68,7 +68,7 @@ function getScene() {
 function getCamera() {
   var aspectRatio = window.innerWidth / window.innerHeight;
   var camera = new THREE.PerspectiveCamera(75, aspectRatio, 0.1, 1000);
-  camera.position.set(400, 90, 200);
+  camera.position.set(300, 90, 200);
   return camera;
 }
 
@@ -88,7 +88,7 @@ function getLight(scene) {
 
 
 function getRenderer() {
-  // Create the canvas with a renderer
+  
   var renderer = new THREE.WebGLRenderer({
     antialias: true
   });
@@ -117,7 +117,7 @@ function getControls(camera, renderer) {
 
 function loadModel() {
   loader = new THREE.OBJLoader();
-  loader.load('models/Sandal.obj', function (object) {
+  loader.load('models/Skull.obj', function (object) {
     object.rotation.z = Math.PI;
     modelObject = object;
     scene.add(object);
