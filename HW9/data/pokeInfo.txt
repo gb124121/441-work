@@ -1,0 +1,6 @@
+<bike>
+	<manufacturer>Pokedex</manufacturer>
+	<model>Small-XL</model>
+	<year>2022</year>
+	<price>$2300-$5000</price>
+</bike>
