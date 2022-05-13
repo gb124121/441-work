@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#canvas1 {
+  position: absolute;
+  background: rgb(255, 255, 255);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 120px;
+  line-height: 110px;
+  white-space: nowrap;
+  border-top: 10px solid black;
+}
+#title::before {
+  content: 'My Final';
+  position: absolute;
+  bottom: -70px;
+  font-size: 35px;
+  text-align: center;
+  width: 100%;
+}
